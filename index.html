@@ -1,40 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | QR code component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-    .container {background-color: white; padding: 25px; border-radius: 25px;  margin: 100px auto; }
-    .container, img {width: 400px;}
-    img {border-radius: 15px; }
-    .cont {text-align: center;}
-    body {background-color: darkgray; font-family: Arial, Helvetica, sans-serif;}
-    
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | QR code component</title>
 
-  <div class="container">
-    <div class="content">
-    <img src="./images/image-qr-code.png" alt="this is animage">
-<div class="cont">
- <h1> Improve your front-end skills by building projects</h1>
-  <p>Scan the QR code to visit Frontend <br> Mentor and take your coding skills to <br> the next level</p>
-</div>  
-</div>
-</div>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .container {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 25px;
+      }
+      /* .container,
+      img {
+        width: 400px;
+      } */
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Malik</a>.
-  </div>
-</body>
+      .content {
+        background-color: white;
+        padding: 5rem;
+        border-radius: 25px;
+        text-align: center;
+      }
+      img {
+        border-radius: 25px;
+      }
+      .cont {
+        text-align: center;
+      }
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: darkgray;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <img src="./images/image-qr-code.png" alt="this is animage" />
+        <div class="cont">
+          <h1>Improve your front-end <br />skills by building projects</h1>
+          <p>
+            Scan the QR code to visit Frontend <br />
+            Mentor and take your coding skills to <br />
+            the next level
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Malik</a>.
+    </div>
+  </body>
 </html>
